@@ -1,0 +1,10 @@
+import numpy as np
+
+def solve(str):
+    output = np.array([s[::-1] for s in str if len(s[::-1]) >= 5])
+    return output
+
+str = np.array(["hello", "vaibhav", "open", "car", "strawberry"])
+output = solve(str)
+print("Output strings will be: ")
+print(output)
